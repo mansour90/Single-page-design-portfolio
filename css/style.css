@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+:root {
+  /* Colors */
+  --main-color:#FFF7F0;
+  --dark-color:#000;
+  --orange-color:#EA7564;
+  --light-color:#FFFFFF;
+  --grey-color:#909090;
+  --violete-color:#755CDE;
+  --light-orange-color:#F5A560;
+  --light-pink-color:#F39D9E;
+  --turquis-color:#62C4B7;
+  --brown-color:#55204A;
+  --dark-violete-color:#393895;
+  --light-grey-color:#F3E8E2;
+  --dark-grey-color:#A49E92;
+
+  /* Paddings */
+  --padding-20:2rem;
+  --padding-40:4rem;
+  
+  /* Width */
+  --max-width:70rem;
+  
+  /* Typography */
+  --h1-fs-1:2.875rem ;
+  --h1-fs-2:2.75rem ;
+  --h1-fs-3:3.5rem ;
+  
+  --p-fs-1:1.25rem;
+  --p-fs-2:1.25rem;
+  --p-fs-3:1.0625rem;
+
+  /* Font Family */
+  --ff-poppins:"Poppins", sans-serif;
+  
+  /* Border Radius */
+  --br-radius-1:7px;
+  --br-radius-2:28px;
+}
+
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Default Styling */
+body {
+  background-color: var(--main-color);
+  font-family:var(--ff-poppins) ;
+}
+
+/* Components */
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  
+}
+
+.navigation {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.1rem;
+}
+.nav-container {
+  width: 90%;
+  padding-block: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #62C4B7; */
+}
+img {
+  display: block;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.btn {
+  border-radius: var(--br-radius-2);
+  font-size: 1.20rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.dark-btn {
+  background-color: var(--dark-color);
+  color:var(--light-color);
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-bottom: 5.7rem;
+  }
+
+  .logo {
+    width: 6.5rem;
+  }
+
+  .btn {
+    border-radius: var(--br-radius-2);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 228px;
+    height: 56px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navigation {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.8rem;
+  }
+  .nav-container {
+    max-width: 1111px;
+    padding-block: 32px;
+  }
+}
+
+/* Section 2 */
+
+.header {
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: rgb(255, 255, 178); */
+  margin-bottom: 3.1rem;
+}
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 4rem;
+  letter-spacing: -2px;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: var(--dark-color);
+  /* background-color: #ffd4d5; */
+}
+
+.sub-text {
+  letter-spacing: -1px;
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: var(--dark-grey-color);
+  text-align: center;
+  line-height: 3rem;
+  /* background-color: #c2f2ff; */
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  
+  .sub-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  
+  .sub-text {
+    font-size: 2.6rem;
+    max-width: 1111px;
+  }
+}
+
+/* Section Services */
+.services {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 125px);
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grid-item {
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.9rem;
+
+}
+
+.graphic-design {
+  background-color: var(--violete-color);
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.ui-ux {
+  background-color: var(--light-orange-color);
+  text-transform: uppercase;
+  grid-column:1/2;
+  grid-row:3/4;
+}
+
+.apps {
+  background-color: var(--light-pink-color);
+  grid-column:2/3;
+  grid-row:3/4;
+
+}
+
+.illustrations {
+  background-color: var(--orange-color);
+  grid-column:1/3;
+  grid-row:4/5;
+}
+
+.photography {
+  background-color: var(--turquis-color);
+  grid-column: 1/3;
+  grid-row:5/6;
+}
+
+
+.motion-graphics {
+  background-color: var(--brown-color);
+  grid-column:1/3;
+  grid-row:6/7 ;
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+  
+  h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  
+  .graphic-design {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  
+  .ui-ux {
+    text-transform: uppercase;
+    grid-column:3/4;
+    grid-row:1/2;
+  }
+  
+  .apps {
+    grid-column:4/5;
+    grid-row:1/2;
+  
+  }
+  
+  .illustrations {
+    grid-column:3/5;
+    grid-row:2/3;
+  }
+  
+  .photography {
+    grid-column: 1/3;
+    grid-row:3/4;
+  }
+  
+  
+  .motion-graphics {
+    grid-column:3/5;
+    grid-row:3/4 ;
+}
+}
+@media screen and (min-width: 1440px) {
+  .services {
+    max-width: 1111px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+  
+  h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  
+  .graphic-design {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  
+  .ui-ux {
+    text-transform: uppercase;
+    grid-column:3/4;
+    grid-row:1/2;
+  }
+  
+  .apps {
+    grid-column:4/5;
+    grid-row:1/2;
+  
+  }
+  
+  .illustrations {
+    grid-column:3/5;
+    grid-row:2/3;
+  }
+  
+  .photography {
+    grid-column: 5/7;
+    grid-row:1/2;
+  }
+  
+  
+  .motion-graphics {
+    grid-column:5/7;
+    grid-row:2/3 ;
+}
+}
