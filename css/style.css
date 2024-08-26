@@ -367,3 +367,137 @@ h3 {
     grid-row:2/3 ;
 }
 }
+
+.about-us {
+  width: 100%;
+  /* margin: 0 auto;
+  background-color: rgb(255, 189, 145); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 3rem;
+}
+
+.text-container {
+  width: 90%;
+  /* background-color: rgb(184, 84, 18); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.about-me-image {
+  width: 26rem;
+  height: 26rem;
+  border-radius: 50%;
+  background-color: var(--turquis-color);
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  max-width: 95%;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.sub-text-about-me {
+  font-size: 14px;
+  text-align: center;
+  color: var(--dark-grey-color);
+  max-width: 95%;
+  margin-bottom: 2rem;
+}
+
+.btn-orange {
+  background-color: var(--orange-color);
+  color: var(--light-color);
+}
+
+@media screen and (min-width: 768px) {
+
+  .about-us {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-container {
+    width: 60%;
+    flex-direction: column;
+    align-items: start;
+  
+  }
+  
+  .about-me-image {
+    overflow: hidden;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+  }
+  
+  h4 {
+    font-size: 26px;
+    text-align: left;
+  }
+  
+  .sub-text-about-me {
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .btn-orange {
+    height: 5rem;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .about-us{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us{
+    padding-block: 10rem;
+    max-width: 1111px;
+  }
+  .text-container {
+    width: 60%;
+    flex-direction: column;
+    align-items: start;
+  
+  }
+  
+  .about-me-image {
+    overflow: hidden;
+    width: 40rem;
+    height: 40rem;
+    margin-bottom: 2rem;
+  }
+  
+  h4 {
+    font-size: 5rem;
+    text-align: left;
+  }
+  
+  .sub-text-about-me {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  
+  .btn-orange {
+    width: 40rem;
+    height: 10rem;
+    font-size: 2.6rem;
+    border-radius: 5rem;
+  }
+
+}
